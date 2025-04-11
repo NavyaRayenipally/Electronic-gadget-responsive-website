@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVAN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="one.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">SVAN :)</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="two.html">PRODUCTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        </ul>
+        <!-- Search Form -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search laptops..." aria-label="Search">
+      </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <h1>WELCOME TO SVAN LAPTOPS</h1>
+    <p>Innovative and sleek laptops built for performance.</p>
+    <br>
+    <a href="two.html" class="btn btn-primary">EXPLORE PRODUCTS</a>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="container my-5">
+      <h2 class="text-center mb-4">ABOUT US</h2>
+      <p class="text-center">At SVAN, we create high-performance laptops that combine power, reliability, and style. Whether you're a student, professional, or gamer, SVAN laptops are built for your needs.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <div class="container my-5">
+      <h2 class="text-center mb-4">CONTACT US</h2>
+      <form id="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+<!--footer-->
+  <script>
+    const footer = document.createElement('footer');
+    const p = document.createElement('p');
+    const year = new Date().getFullYear();
+    p.innerHTML = `&copy; ${year} SVAN. All rights reserved.`;
+    footer.appendChild(p);
+    document.body.appendChild(footer);
+  </script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
